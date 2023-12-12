@@ -209,3 +209,8 @@
     border: 1px solid rgba(0, 0, 0, .3);
     color: #444;
 }
+@media screen and (max-width: 450px) {
+    .container1 form {
+        width: 370px; /* Full width for smaller screens */
+    }
+}

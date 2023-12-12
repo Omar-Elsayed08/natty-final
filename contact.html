@@ -8,10 +8,47 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="icon" type="image/x-icon" href="img/natty favicon.png">
   <title>About</title>
+  <style>
+    /* Add basic styles for the popup */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    #popup {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    #popup-content {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Add responsive styles */
+    @media (max-width: 600px) {
+      #popup-content {
+        width: 90%;
+      }
+    }
+    
+  </style>
 </head>
 
 <body>
-  <script src="main.js"></script>
+  <script src="scripts/main.js"></script>
   <div id="loader-wrapper">
     <div id="loader"></div>
 
@@ -69,7 +106,32 @@
       <label for="subject">Subject</label>
       <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
   
-      <input type="submit" value="Submit">
+      
   
-    </form>
+  
+      <input onclick="showPopup(); return false;" type="submit" value="Submit">
+    
+  </form>
+    <!-- Popup container -->
+    <div id="popup">
+      <p>Thank you</p>
+      <button onclick="closePopup()">Close</button>
+    </div>
+  
+    <!-- Form with submit button -->
+    
+    <!-- JavaScript to handle the popup -->
+    <script>
+      function showPopup() {
+        // Display the popup
+        document.getElementById('popup').style.display = 'block';
+      }
+  
+      function closePopup() {
+        // Close the popup
+        document.getElementById('popup').style.display = 'none';
+      }
+    </script>
+  
+    
   </div>
