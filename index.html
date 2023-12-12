@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Natty</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" media="screen and (max-width: 600px)" href="styles/smallscreen.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <script id="insert"></script>
+  <link rel="icon" type="image/x-icon" href="img/natty favicon.png">
+
+  <script src="/js/stringify.js?c967a9b82819adcc41bc5ca208a7fdfa79e4a8fb" charset="utf-8"></script>
+</head>
+
+<body>
+  <header>
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/Coding-Project-Natty-Inc-2.png" width="6770px" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="about.html">About Us</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="droid.html">About Droids</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="results.html">Results</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="testimonials.html">Testimonials</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="buy.html">Buy</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+  <br>
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+
+  </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+      height="16" fill="currentColor" class="bi bi-chevron-double-up" viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z" />
+      <path fill-rule="evenodd"
+        d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+    </svg></button>
+  <!--Main Heading-->
+
+  <br>
+  <div class="back">
+    <main>
+      <section id="hero">
+        <h1>Welcome to Natty</h1>
+        <p>Natty Inc. is a researched based company founded <br> in 2023. Natty Inc. wants to change the world through
+          <br>science and innovation.</p>
+        <div class="col-md-4 text-left"><button type="button" class="btn btn-dark lg"
+            onclick="scrollToSection('section1')">More About our products <i class="bi bi-arrow-bar-down"></i></button>
+        </div><br>
+        <div class="col-md-4 text-left"><button type="button" class="btn btn-dark lg"
+            onclick="scrollToSection('section2')">Frequently Asked Questions <i
+              class="bi bi-arrow-bar-down"></i></button>
+      </section>
+    </main>
+  </div>
+
+  <!--About Us-->
+  <section class="about-us">
+    <div class="container-fluid about">
+      <img src="img/Coding-Project-Natty-Inc-2.png" class="mobile-hidden pic">
+      <div class="container-fluid text">
+        <h2>About Us</h2>
+        <h5>Natty Inc.</h5>
+        <p>Natty Inc. is a researched based company founded in 2023 by three geniuses. The names of these geniuses are
+          Santiago, Victor, and Omar. Natty Inc. wants to change the world through science and innovation. Natty Inc.
+          came up to the solution of one of the world’s problems. We at Natty Inc. have designed an antidote. We present
+          to the world, Droids.
+          Droids is the solution to the problem of people who are just too good. Are you tired of destroying
+          competition? Are you bored of just being too amazingly athletic? Maybe you regret some past choices; whatever
+          the reason is we have the solution. Our product will make you decrease in muscle mass, and so much more!</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!--Our Products-->
+ 
+    <section id="HomeProducts">
+      <h1>Our Products</h1>
+      <div class="col-md-12 text-right">
+        <a href="checkout.html" class="btn col-md-12 btn-dark btn-lg">View our Checkout Page</a>
+      </div>
+
+
+    <div class="container-fluid d-flex justify-content-center">
+      <div class="row">
+        <div class="col-md-3">
+
+          <div id="section1" class="card shop1">
+            <img src="img/syringe.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text big">Droid Syringe</p>
+              <p class="card-text big">$750</p>
+             
+              <a href="droid.html" class="btn cart  third px-auto"><span class="c11">View Details</span></a>
+              <a href="checkout.html" class="btn cart  btn-dark px-auto"><span class="c12">Buy Now</span> </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+
+          <div class="card shop1">
+            <img src="img/juice.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text big">Droid Juice</p>
+              <p class="card-text big">$100</p>
+
+              <a href="droid.html" class="btn cart third px-auto">View Details</a>
+              <a href="checkout.html" class="btn btn-dark cart px-auto">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+
+          <div class="card shop1">
+            <img src="img/tablets.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text big">Droid Tablets</p>
+              <p class="card-text big">$250</p>
+
+              <a href="droid.html" class="btn cart third px-auto">View Details</a>
+              <a href="checkout.html" class="btn btn-dark cart px-auto">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+
+          <div class="card shop1">
+            <img src="img/powder.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text big">Droid powder</p>
+              <p class="card-text big">$50</p>
+
+              <a href="droid.html" class="btn  cart third px-auto">View Details</a>
+              <a href="checkout.html" class="btn btn-dark cart px-auto">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+    </div>
+
+    <br>
+    <br>
+
+
+    <!--3d Model-->
+    <div class="container">
+      <section id="HomeProducts">
+        <h1>Product Model</h1>
+      </section>
+      <div class="container">
+
+      <section class="about-us1">
+        <div class="row">
+        <div class="container-fluid about">
+          <div class="container-fluid c4">
+          <iframe class="responsive-iframe" src="https://app.3dviewermax.com/d5e90f8a-2fc8-4b03-ac41-8a588ca280ae" height="500" width="500"
+            title="Syringe Model"></iframe>
+          </div>
+          <div class="container-fluid col-md-6 text">
+            <h2>Syringe Model</h2>
+            <br>
+            <h5>-Syringes contain 2500 mg. of droidxyclaphl</h5>
+            <h5>-Most affective product</h5>
+            <h5>-$750</h5>
+            <h5>-Safest needle worldwide</h5>
+            <a href="checkout.html" class="btn btn-dark btn-lg">Buy Now</a>
+            <p></p>
+          </div>
+        </div>
+        </section>
+      </div>
+
+    </div>
+    </div>
+
+<br>
+<br>
+<br>
+
+
+
+    <!-- Faq-->
+    <div id="section2" class="FAQ">
+      <h1 class="faq-heading">FAQ'S</h1>
+      <section class="faq-container">
+        <div class="faq-one">
+
+          <!-- faq question -->
+          <h1 class="faq-page">Why Should we be Trusted?</h1>
+
+          <!-- faq answer -->
+          <div class="faq-body">
+            <p>We at Natty Inc. focus on accomodating the consumer. We prioritize your satisfaction over our personal
+              gain. Our loyal and past customers have proven our promise to be true.</p>
+          </div>
+        </div>
+        <hr class="hr-line">
+
+        <div class="faq-two">
+
+          <!-- faq question -->
+          <h1 class="faq-page">Are Droids Safe?</h1>
+
+          <!-- faq answer -->
+
+          <div class="faq-body">
+            <p>Droids have been tested and tested over and over again. Every result was positive. You can see the
+              results for yourself.</p>
+          </div>
+        </div>
+        <hr class="hr-line">
+
+
+        <div class="faq-three">
+
+          <!-- faq question -->
+          <h1 class="faq-page">How do Droids Work?</h1>
+
+          <!-- faq answer -->
+          <div class="faq-body">
+            <p>Droids extiniguish your body's method of producing muscle. It takes 1 week to view the full results
+              depending on the quantity of Droids consumed.</p>
+          </div>
+        </div>
+
+      </section>
+
+      <script src="scripts/main.js"></script>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+      function scrollToSection(sectionId) {
+        document.getElementById(sectionId).scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    </script>
+    <footer>
+      <p>&copy; 2023 Natty Inc. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and jQuery for functionality -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</div>
+
+</html>
+```

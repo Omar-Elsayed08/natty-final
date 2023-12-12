@@ -1,0 +1,211 @@
+/* CSS Styles */
+
+/* Font styling for the page */
+@font-face {
+    font-family: Font1;
+    src: url('fonts/Latica.ttf');
+}
+
+/* Global styling for all elements */
+* {
+    font-family: 'Font1', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+/* Styling for the main container */
+.container1 {
+    max-height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 60px;
+    text-transform: uppercase;
+}
+
+/* Styling for the form within the container */
+.container1 form {
+    background: #fff;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
+    padding: 20px;
+    width: 600px;
+    padding-top: 120px;
+}
+
+/* Styling for input boxes within the form */
+.container1 form .inputBox {
+    margin-top: 0px;
+}
+
+/* Styling for the input box labels within the form */
+.container1 form .inputBox span {
+    display: block;
+    color: #999;
+    padding-bottom: px; /* Note: This seems to be a typo, should be '0px' or some value */
+}
+
+/* Styling for input fields and select boxes within the form */
+.container1 form .inputBox input,
+.container1 form .inputBox select {
+    width: 100%;
+    padding: 10px;
+
+    border: 1px solid rgba(0, 0, 0, .3);
+    color: #444;
+}
+
+/* Styling for a flexbox within the form */
+.container1 form .flexbox {
+    display: flex;
+    gap: 15px;
+}
+
+/* Styling for input boxes within the flexbox */
+.container1 form .flexbox .inputBox {
+    flex: 1 1 50px;
+}
+
+/* Styling for the submit button within the form */
+.container1 form .submit-btn {
+    width: 100%;
+    background: linear-gradient(45deg, blueviolet, deeppink);
+    margin-top: 20px;
+    padding: 4px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+/* Hover effect for the submit button */
+.container1 form .submit-btn:hover {
+    letter-spacing: 2px;
+    opacity: .8;
+}
+
+/* Styling for the card container within the main container */
+.container1 .card-container {
+    margin-bottom: -150px;
+    position: relative;
+    height: 250px;
+    width: 400px;
+}
+
+/* Styling for the front side of the card within the card container */
+.container1 .card-container .front {
+    position: absolute;
+    height: 110%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, rgb(0, 90, 173), rgb(201, 250, 204));
+    border-radius: 5px;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+    padding: 15px;
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform .4s ease-out;
+}
+
+/* Styling for the image and card number box within the front of the card */
+.container1 .card-container .front .image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 35px;
+}
+
+/* Styling for the image within the front of the card */
+.container1 .card-container .front .image img {
+    height: 50px;
+}
+
+/* Styling for various elements within the front of the card */
+.container1 .card-container .front .card-number-box {
+    padding: 30px 0;
+    font-size: 22px;
+    color: #fff;
+}
+
+/* Styling for a flexbox within the front of the card */
+.container1 .card-container .front .flexbox {
+    display: flex;
+}
+
+/* Styling for specific boxes within the flexbox of the front of the card */
+.container1 .card-container .front .flexbox .box:nth-child(1) {
+    margin-right: auto;
+}
+
+/* Styling for boxes within the flexbox of the front of the card */
+.container1 .card-container .front .flexbox .box {
+    font-size: 15px;
+    color: #fff;
+}
+
+/* Styling for the back side of the card within the card container */
+.container1 .card-container .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, blueviolet, deeppink);
+    border-radius: 5px;
+    padding: 20px 0;
+    text-align: right;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .2);
+    transform: perspective(1000px) rotateY(180deg);
+    transition: transform .4s ease-out;
+}
+
+/* Styling for the stripe within the back of the card */
+.container1 .card-container .back .stripe {
+    background: #000;
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+}
+
+/* Styling for various boxes within the back of the card */
+.container1 .card-container .back .box {
+    padding: 0 20px;
+}
+
+/* Styling for spans within the boxes of the back of the card */
+.container1 .card-container .back .box span {
+    color: #fff;
+    font-size: 15px;
+}
+
+/* Styling for the CVV box within the back of the card */
+.container1 .card-container .back .box .cvv-box {
+    height: 50px;
+    padding: 10px;
+    margin-top: 5px;
+    color: #333;
+    background: #fff;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Styling for the image within the back of the card */
+.container1 .card-container .back .box img {
+    margin-top: 30px;
+    height: 30px;
+}
+.container1 form .inputBox input,
+.container1 form .inputBox select {
+    width: 100%; /* Adjust the width as needed */
+    padding: 4px; /* Adjust the padding as needed */
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    color: #444;
+}
