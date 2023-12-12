@@ -1282,6 +1282,10 @@ body {
             z-index: 1; /* Adjust the z-index value as needed */
             /* ... your other styles ... */
         }
+
+        svg{
+            fill: gold;
+        }
                         
     
 
