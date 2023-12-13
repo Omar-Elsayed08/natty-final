@@ -903,11 +903,10 @@ img {
 
 .checkout-cart {
     position: fixed;
-    top: 10px;
-    right: 10px;
     background-color: #fff;
     border: 1px solid #ddd;
     padding: 10px;
+    padding-top: 130px;
 }
 
 /* products card */
@@ -1118,8 +1117,6 @@ body {
 
         .checkout-cart {
             position: fixed;
-            top: 80px;
-            right: 10px;
             background-color: #ffffff;
             border: 1px solid #ddd;
             padding: 20px;
@@ -1278,7 +1275,7 @@ body {
             position: fixed;
             right: 0;
             top: 0;
-            z-index: 1000; /* Adjust the z-index value as needed */
+            z-index: 50; /* Adjust the z-index value as needed */
             /* ... your other styles ... */
         }
         .swiper {
@@ -1286,7 +1283,7 @@ body {
             /* ... your other styles ... */
         }
 
-        svg{
+        .svg1{
             fill: gold;
         }
                         

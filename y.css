@@ -73,7 +73,7 @@
 /* Styling for the submit button within the form */
 .container1 form .submit-btn {
     width: 100%;
-    background: linear-gradient(45deg, blueviolet, deeppink);
+    background: linear-gradient(45deg, rgb(0, 90, 173), rgb(201, 250, 204));
     margin-top: 20px;
     padding: 4px;
     font-size: 20px;
@@ -156,7 +156,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background: linear-gradient(45deg, blueviolet, deeppink);
+    background: linear-gradient(45deg, rgb(0, 90, 173), rgb(201, 250, 204));
     border-radius: 5px;
     padding: 20px 0;
     text-align: right;
